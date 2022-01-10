@@ -101,6 +101,7 @@ section.hero {
 section.grid {
     .grid__egg, .grid__cup {
         display: flex;
+        min-width: 50%;
 
         .grid__egg-text, .grid__cup-text {
             display: flex;
@@ -117,7 +118,7 @@ section.grid {
             
             p {
                 font-family: $font-barlow;
-                color: $grayish-blue;
+                color: $dark-grayish-blue;
                 line-height: 1.8;
                 margin-bottom: 40px;
             }
@@ -135,26 +136,149 @@ section.grid {
             .grid__egg-text-btn::before, .grid__cup-text-btn::before {
                 content: "";
                 position: absolute;
-                left: 15%;
+                left: -1%;
                 bottom: -3px;
-                width: 140px;
+                width: 150px;
                 height: 12px;
-                transform: skew(-12deg) translateX(-50%);
+                border-radius: 10px;
                 z-index: -1;
             }
             
             .grid__egg-text-btn::before {
-                background: hsla(51, 100%, 49%, 0.5);
+                background: hsla(51, 100%, 49%, 0.3);
             }
 
             .grid__cup-text-btn::before {
-                background: hsla(7, 99%, 70%, 0.5);
+                background: hsla(7, 99%, 70%, 0.3);
             }
         }
 
         img {
-            width: 50%;
+            min-width: 50%;
         }
     }
+
+    .grid__fruits {
+        display: flex;
+
+        &-cherry {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("/images/desktop/image-graphic-design.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 600px;
+
+            h4 {
+                font-family: $font-fraunces;
+                font-size: 25px;
+                padding: 350px 0 20px 0;
+            }
+
+            p {
+                font-family: $font-barlow;
+                text-align: center;
+                max-width: 380px;
+                color: $very-dark-grayish-blue;
+                line-height: 1.8;
+            }
+        }
+        
+        &-orange {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("/images/desktop/image-photography.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 600px;
+
+            h4 {
+                font-family: $font-fraunces;
+                font-size: 25px;
+                padding: 350px 0 20px 0;
+            }
+
+            p {
+                font-family: $font-barlow;
+                text-align: center;
+                max-width: 380px;
+                color: $very-dark-grayish-blue;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+// Clients section styles
+section.clients {
+    margin: 130px 0 130px 0;
+    
+    h4 {
+        font-family: $font-fraunces;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $dark-grayish-blue;
+        margin-bottom: 60px;
+    }
+    
+    .clients__profile {
+        display: flex;
+        gap: 30px;
+        margin: 0 auto;
+        width: 80%;
+        
+        &-emily, &-thomas, &-jennie {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                margin-bottom: 50px;
+            }
+
+            &-desc {
+                font-family: $font-barlow;
+                color: $very-dark-grayish-blue;
+                margin-bottom: 50px;
+                text-align: center;
+                line-height: 1.8;
+            }
+
+            &-name {
+                font-family: $font-fraunces;
+                margin-bottom: 10px;
+            }
+
+            &-title {
+                font-family: $font-barlow;
+                color: $grayish-blue;
+            }
+        }
+    }
+}
+
+// Photos section styles
+section.photos {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
 
