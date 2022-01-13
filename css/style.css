@@ -28,7 +28,7 @@ section.hero .hero__nav {
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 30px 30px 0 30px;
+  padding: 40px 30px 0 30px;
 }
 
 section.hero .hero__nav a {
@@ -246,11 +246,43 @@ section.clients .clients__profile-emily-title, section.clients .clients__profile
 
 section.photos {
   display: flex;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 section.photos img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+footer.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #458c7e;
+}
+
+footer.footer .footer__wrapper .footer__wrapper-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer.footer .footer__wrapper .footer__wrapper-content svg {
+  margin: 50px 0 20px 0;
+}
+
+footer.footer .footer__wrapper .footer__wrapper-content ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+footer.footer .footer__wrapper .footer__wrapper-content ul li a {
+  font-family: "Barlow", sans-serif;
+  color: #25564b;
+  text-decoration: none;
+}
+
+footer.footer .footer__wrapper .footer__wrapper-content ul.socials {
+  margin-bottom: 20px;
 }

@@ -48,7 +48,7 @@ section.hero {
         align-items: center;
         max-width: 1400px;
         margin: 0 auto;
-        padding: 30px 30px 0 30px;
+        padding: 40px 30px 0 30px;
         
         a {
             cursor: pointer;
@@ -272,12 +272,52 @@ section.clients {
 // Photos section styles
 section.photos {
     display: flex;
-    width: 100%;
-    overflow-x: hidden;
 
     img {
         max-width: 100%;
-        height: auto;
+        height: 100%;
+    }
+
+}
+
+// Footer section styles
+footer.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-moderate-cyan-footer;
+
+    .footer__wrapper {
+
+        .footer__wrapper-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            svg {
+                margin: 50px 0 20px 0;
+            }
+
+            ul {
+                display: flex;
+                gap: 25px;
+                list-style: none;
+    
+                li {
+
+                    a {
+                        font-family: $font-barlow;
+                        color: $dark-desaturated-cyan-graphic-design-text;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            ul.socials {
+                margin-bottom: 20px;
+            }
+        }
     }
 
 }
