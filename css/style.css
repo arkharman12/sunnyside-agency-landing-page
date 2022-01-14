@@ -78,7 +78,6 @@ section.hero .hero__header h1 {
 
 section.grid .grid__egg, section.grid .grid__cup {
   display: flex;
-  min-width: 50%;
 }
 
 section.grid .grid__egg .grid__egg-text, section.grid .grid__egg .grid__cup-text, section.grid .grid__cup .grid__egg-text, section.grid .grid__cup .grid__cup-text {
@@ -285,4 +284,127 @@ footer.footer .footer__wrapper .footer__wrapper-content ul li a {
 
 footer.footer .footer__wrapper .footer__wrapper-content ul.socials {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  section.grid .grid__egg .grid__egg-text, section.grid .grid__egg .grid__cup-text, section.grid .grid__cup .grid__egg-text, section.grid .grid__cup .grid__cup-text {
+    padding: 0 78px;
+  }
+  section.grid .grid__egg .grid__egg-text h3, section.grid .grid__egg .grid__cup-text h3, section.grid .grid__cup .grid__egg-text h3, section.grid .grid__cup .grid__cup-text h3 {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+  section.grid .grid__egg .grid__egg-text p, section.grid .grid__egg .grid__cup-text p, section.grid .grid__cup .grid__egg-text p, section.grid .grid__cup .grid__cup-text p {
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  section.grid .grid__egg img, section.grid .grid__cup img {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.hero .hero__header {
+    margin-top: 20vh;
+  }
+  section.hero .hero__header h1 {
+    font-size: 45px;
+    letter-spacing: 8px;
+    margin-bottom: 60px;
+  }
+  section.grid .grid__egg .grid__egg-text, section.grid .grid__egg .grid__cup-text, section.grid .grid__cup .grid__egg-text, section.grid .grid__cup .grid__cup-text {
+    padding: 0 58px;
+  }
+  section.grid .grid__egg .grid__egg-text h3, section.grid .grid__egg .grid__cup-text h3, section.grid .grid__cup .grid__egg-text h3, section.grid .grid__cup .grid__cup-text h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  section.grid .grid__egg .grid__egg-text p, section.grid .grid__egg .grid__cup-text p, section.grid .grid__cup .grid__egg-text p, section.grid .grid__cup .grid__cup-text p {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  section.grid .grid__egg .grid__egg-text .grid__egg-text-btn, section.grid .grid__egg .grid__egg-text .grid__cup-text-btn, section.grid .grid__egg .grid__cup-text .grid__egg-text-btn, section.grid .grid__egg .grid__cup-text .grid__cup-text-btn, section.grid .grid__cup .grid__egg-text .grid__egg-text-btn, section.grid .grid__cup .grid__egg-text .grid__cup-text-btn, section.grid .grid__cup .grid__cup-text .grid__egg-text-btn, section.grid .grid__cup .grid__cup-text .grid__cup-text-btn {
+    font-size: 13px;
+  }
+  section.grid .grid__egg .grid__egg-text .grid__egg-text-btn::before, section.grid .grid__egg .grid__egg-text .grid__cup-text-btn::before, section.grid .grid__egg .grid__cup-text .grid__egg-text-btn::before, section.grid .grid__egg .grid__cup-text .grid__cup-text-btn::before, section.grid .grid__cup .grid__egg-text .grid__egg-text-btn::before, section.grid .grid__cup .grid__egg-text .grid__cup-text-btn::before, section.grid .grid__cup .grid__cup-text .grid__egg-text-btn::before, section.grid .grid__cup .grid__cup-text .grid__cup-text-btn::before {
+    left: -1%;
+    bottom: -3px;
+    width: 108px;
+    height: 9px;
+  }
+  section.grid .grid__egg img, section.grid .grid__cup img {
+    min-width: 50%;
+  }
+  section.grid .grid__fruits-cherry {
+    width: 100%;
+    height: 320px;
+  }
+  section.grid .grid__fruits-cherry h4 {
+    font-size: 20px;
+    padding: 170px 0 17px 0;
+  }
+  section.grid .grid__fruits-cherry p {
+    font-size: 13px;
+    max-width: 280px;
+  }
+  section.grid .grid__fruits-orange {
+    width: 100%;
+    height: 320px;
+  }
+  section.grid .grid__fruits-orange h4 {
+    font-size: 20px;
+    padding: 170px 0 17px 0;
+  }
+  section.grid .grid__fruits-orange p {
+    font-size: 13px;
+    max-width: 280px;
+  }
+  section.clients {
+    margin: 130px 0 130px 0;
+  }
+  section.clients .clients__profile {
+    gap: 30px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  section.clients .clients__profile-emily img, section.clients .clients__profile-thomas img, section.clients .clients__profile-jennie img {
+    margin-bottom: 40px;
+  }
+  section.clients .clients__profile-emily-desc, section.clients .clients__profile-thomas-desc, section.clients .clients__profile-jennie-desc {
+    font-size: 13px;
+    margin-bottom: 50px;
+  }
+  section.clients .clients__profile-emily-name, section.clients .clients__profile-thomas-name, section.clients .clients__profile-jennie-name {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  section.clients .clients__profile-emily-title, section.clients .clients__profile-thomas-title, section.clients .clients__profile-jennie-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  section.grid .grid__egg .grid__egg-text, section.grid .grid__egg .grid__cup-text, section.grid .grid__cup .grid__egg-text, section.grid .grid__cup .grid__cup-text {
+    padding: 0 48px;
+  }
+  section.grid .grid__egg .grid__egg-text h3, section.grid .grid__egg .grid__cup-text h3, section.grid .grid__cup .grid__egg-text h3, section.grid .grid__cup .grid__cup-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  section.grid .grid__egg .grid__egg-text p, section.grid .grid__egg .grid__cup-text p, section.grid .grid__cup .grid__egg-text p, section.grid .grid__cup .grid__cup-text p {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+  section.grid .grid__egg .grid__egg-text .grid__egg-text-btn, section.grid .grid__egg .grid__egg-text .grid__cup-text-btn, section.grid .grid__egg .grid__cup-text .grid__egg-text-btn, section.grid .grid__egg .grid__cup-text .grid__cup-text-btn, section.grid .grid__cup .grid__egg-text .grid__egg-text-btn, section.grid .grid__cup .grid__egg-text .grid__cup-text-btn, section.grid .grid__cup .grid__cup-text .grid__egg-text-btn, section.grid .grid__cup .grid__cup-text .grid__cup-text-btn {
+    font-size: 13px;
+  }
+  section.grid .grid__egg .grid__egg-text .grid__egg-text-btn::before, section.grid .grid__egg .grid__egg-text .grid__cup-text-btn::before, section.grid .grid__egg .grid__cup-text .grid__egg-text-btn::before, section.grid .grid__egg .grid__cup-text .grid__cup-text-btn::before, section.grid .grid__cup .grid__egg-text .grid__egg-text-btn::before, section.grid .grid__cup .grid__egg-text .grid__cup-text-btn::before, section.grid .grid__cup .grid__cup-text .grid__egg-text-btn::before, section.grid .grid__cup .grid__cup-text .grid__cup-text-btn::before {
+    left: -1%;
+    bottom: -3px;
+    width: 100px;
+    height: 9px;
+  }
+  section.grid .grid__egg img, section.grid .grid__cup img {
+    min-width: 50%;
+  }
 }

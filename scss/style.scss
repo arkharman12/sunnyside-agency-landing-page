@@ -101,7 +101,7 @@ section.hero {
 section.grid {
     .grid__egg, .grid__cup {
         display: flex;
-        min-width: 50%;
+        // min-width: 50%;
 
         .grid__egg-text, .grid__cup-text {
             display: flex;
@@ -319,6 +319,182 @@ footer.footer {
             }
         }
     }
+}
 
+// Media queries
+@media (max-width: 1024px) {
+    section.grid {
+        .grid__egg, .grid__cup {
+            // min-width: 50%;
+    
+            .grid__egg-text, .grid__cup-text {
+                padding: 0 78px;
+    
+                h3 {
+                    font-size: 38px;
+                    margin-bottom: 30px;
+                }
+                
+                p {
+                    line-height: 1.8;
+                    margin-bottom: 40px;
+                }
+            }
+    
+            img {
+                min-width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section.hero {
+        .hero__header {
+            margin-top: 20vh;
+    
+            h1 {
+                font-size: 45px;
+                letter-spacing: 8px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    section.grid {
+        .grid__egg, .grid__cup {
+            // min-width: 50%;
+    
+            .grid__egg-text, .grid__cup-text {
+                padding: 0 58px;
+    
+                h3 {
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                }
+                
+                p {
+                    font-size: 13px;
+                    margin-bottom: 40px;
+                }
+
+                .grid__egg-text-btn, .grid__cup-text-btn {
+                    font-size: 13px;
+                }
+    
+                .grid__egg-text-btn::before, .grid__cup-text-btn::before {
+                    left: -1%;
+                    bottom: -3px;
+                    width: 108px;
+                    height: 9px;
+                }
+            }
+    
+            img {
+                min-width: 50%;
+            }
+        }
+
+        .grid__fruits {
+            &-cherry {
+                width: 100%;
+                height: 320px;
+    
+                h4 {
+                    font-size: 20px;
+                    padding: 170px 0 17px 0;
+                }
+    
+                p {
+                    font-size: 13px;
+                    max-width: 280px;
+                }
+            }
+            
+            &-orange {
+                width: 100%;
+                height: 320px;
+    
+                h4 {
+                    font-size: 20px;
+                    padding: 170px 0 17px 0;
+                }
+    
+                p {
+                    font-size: 13px;
+                    max-width: 280px;
+                }
+            }
+        }
+    }
+
+    section.clients {
+        margin: 130px 0 130px 0;
+        
+        .clients__profile {
+            gap: 30px;
+            margin: 0 auto;
+            width: 80%;
+            
+            &-emily, &-thomas, &-jennie {
+    
+                img {
+                    margin-bottom: 40px;
+                }
+    
+                &-desc {
+                    font-size: 13px;
+                    margin-bottom: 50px;
+                }
+    
+                &-name {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+    
+                &-title {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+    section.grid {
+        .grid__egg, .grid__cup {
+            // min-width: 50%;
+    
+            .grid__egg-text, .grid__cup-text {
+                padding: 0 48px;
+    
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+                
+                p {
+                    font-size: 13px;
+                    margin-bottom: 25px;
+                }
+
+                .grid__egg-text-btn, .grid__cup-text-btn {
+                    font-size: 13px;
+                }
+    
+                .grid__egg-text-btn::before, .grid__cup-text-btn::before {
+                    left: -1%;
+                    bottom: -3px;
+                    width: 100px;
+                    height: 9px;
+                }
+            }
+    
+            img {
+                min-width: 50%;
+            }
+        }
+    }
 }
 
