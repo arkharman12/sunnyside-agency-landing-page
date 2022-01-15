@@ -35,6 +35,7 @@ body {
 
 // Hero section styles
 section.hero {
+    position: relative;
     background-image: url("/images/desktop/image-header.jpg");
     background-position: center center;
     background-size: cover;
@@ -74,6 +75,51 @@ section.hero {
                     background-color: $white;
                     padding: 12px 20px;
                     border-radius: 22px;
+                }
+            }
+        }
+
+        /* Hamburger menu */
+        .ham-menu-icon {
+            display: none;
+        }
+        
+        .nav-overlay {
+            display: none;
+            position: absolute;
+            background-color: $white;
+            min-width: 80vw;
+            // min-height: 50vh;
+            top: 15vh;
+            left: 10vw;
+            z-index: 100;
+            
+            .overlay-content {
+                font-family: $font-barlow;
+                // width: 100%;
+                text-align: center;
+                margin: 40px 0;
+                font-size: 18px;
+                
+                a {
+                    display: block;
+                    padding: 8px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: $dark-grayish-blue;
+                    margin: 20px 0;
+                    letter-spacing: 0.5px;
+                }
+
+                a.hero__contact-btn {
+                    font-family: $font-fraunces;
+                    color: $very-dark-desaturated-blue;
+                    background-color: $yellow;
+                    width: 150px;
+                    margin: 0 auto;
+                    padding: 16px 20px;
+                    border-radius: 30px;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -462,6 +508,20 @@ footer.footer {
 }
 
 @media (max-width: 700px) {
+
+    section.hero {
+        .hero__nav {
+            ul {
+                display: none;
+            }
+
+            .ham-menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+
     section.grid {
         .grid__egg, .grid__cup {
             // min-width: 50%;

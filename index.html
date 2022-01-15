@@ -14,13 +14,26 @@
     <section class="hero">
       <div class="hero__nav">
         <a><img src="./images/logo.svg" alt="Logo"></a>
-
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#" class="hero__contact-btn">Contact</a></li>
         </ul>
+
+        <!-- Hamburger icon -->
+        <img class="ham-menu-icon" id="ham-menu-icon" src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
+        
+        <!-- Mobile menu -->
+        <div id="nav-overlay" class="nav-overlay">
+          <!-- <img id="close-btn" src="./images/icon-hamburger.svg" alt="" aria-hidden="true"> -->
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#" class="hero__contact-btn">Contact</a>
+          </div>
+        </div>
       </div>
 
       <div class="hero__header">
@@ -134,11 +147,6 @@
     </footer>
   </main>
 
-
-
-
-  <!-- <div style="height: 9999px;"></div> -->
-
-
+  <script src="./js/script.js"></script>
 </body>
 </html>
