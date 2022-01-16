@@ -2,27 +2,17 @@
 const hamIcon = document.getElementById("ham-menu-icon");
 const navOverlay = document.getElementById("nav-overlay");
 
+
 hamIcon.addEventListener("click", function() {
     hamIcon.classList.toggle("active");
-
+    
     if (hamIcon.classList.contains("active")) {
-        console.log("hello")
         navOverlay.style.display = "block";
         document.body.style.overflow = "hidden";
-        
-        // window.addEventListener('click', function(e) {
-        //     if (!navOverlay.contains(e.target)) {
-        //     alert("Clicked outside l2 and logo-menu");
-        //     // navOverlay.style.display = "none";
-        //     document.body.style.overflow = "visible";
-        //   } 
-        // })
-
     } else {
         navOverlay.style.display = "none";
         document.body.style.overflow = "visible";
     }
-
     
     (function() {
         window.onresize = displayWindowSize;
