@@ -1,29 +1,41 @@
 // Hamburger menu
 const hamIcon = document.getElementById("ham-menu-icon");
+const navOverlay = document.getElementById("nav-overlay");
 
 hamIcon.addEventListener("click", function() {
     hamIcon.classList.toggle("active");
 
     if (hamIcon.classList.contains("active")) {
-        document.getElementById("nav-overlay").style.display = "block";
-        // document.body.style.position = "fixed";
+        console.log("hello")
+        navOverlay.style.display = "block";
         document.body.style.overflow = "hidden";
+        
+        // window.addEventListener('click', function(e) {
+        //     if (!navOverlay.contains(e.target)) {
+        //     alert("Clicked outside l2 and logo-menu");
+        //     // navOverlay.style.display = "none";
+        //     document.body.style.overflow = "visible";
+        //   } 
+        // })
+
     } else {
-        document.getElementById("nav-overlay").style.display = "none";
-        document.body.style.position = "static";
+        navOverlay.style.display = "none";
+        document.body.style.overflow = "visible";
     }
 
+    
     (function() {
         window.onresize = displayWindowSize;
         window.onload = displayWindowSize;
         
         function displayWindowSize() {
-            let myWidth = window.innerWidth;
+            let width = window.innerWidth;
             
-            // if (myWidth >= 700) {
-            //     document.getElementById("nav-overlay").style.display = "none";
-            //     document.body.style.position = "static";
-            // }
+            if (width >= 700) {
+                hamIcon.classList.remove("active");
+                navOverlay.style.display = "none";
+                document.body.style.overflow = "visible";
+            }
         }
     })();  
 });
