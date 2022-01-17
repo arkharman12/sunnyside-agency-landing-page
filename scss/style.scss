@@ -36,7 +36,7 @@ body {
 // Hero section styles
 section.hero {
     position: relative;
-    background-image: url("./images/desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@ section.grid {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: url("./images/desktop/image-graphic-design.jpg");
+            background-image: url("../images/desktop/image-graphic-design.jpg");
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -247,7 +247,7 @@ section.grid {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: url("./images/desktop/image-photography.jpg");
+            background-image: url("../images/desktop/image-photography.jpg");
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
