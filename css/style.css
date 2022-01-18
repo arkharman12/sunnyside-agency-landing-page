@@ -61,6 +61,13 @@ section.hero .hero__nav ul li a.hero__contact-btn {
   border-radius: 22px;
 }
 
+section.hero .hero__nav ul li a.hero__contact-btn:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 12px 20px;
+  border-radius: 22px;
+}
+
 section.hero .hero__nav .ham-menu-icon {
   display: none;
 }
@@ -181,8 +188,16 @@ section.grid .grid__egg .grid__egg-text .grid__egg-text-btn::before, section.gri
   background: rgba(250, 212, 0, 0.3);
 }
 
+section.grid .grid__egg .grid__egg-text .grid__egg-text-btn:hover::before, section.grid .grid__egg .grid__cup-text .grid__egg-text-btn:hover::before, section.grid .grid__cup .grid__egg-text .grid__egg-text-btn:hover::before, section.grid .grid__cup .grid__cup-text .grid__egg-text-btn:hover::before {
+  background: #fad400;
+}
+
 section.grid .grid__egg .grid__egg-text .grid__cup-text-btn::before, section.grid .grid__egg .grid__cup-text .grid__cup-text-btn::before, section.grid .grid__cup .grid__egg-text .grid__cup-text-btn::before, section.grid .grid__cup .grid__cup-text .grid__cup-text-btn::before {
   background: rgba(254, 120, 103, 0.3);
+}
+
+section.grid .grid__egg .grid__egg-text .grid__cup-text-btn:hover::before, section.grid .grid__egg .grid__cup-text .grid__cup-text-btn:hover::before, section.grid .grid__cup .grid__egg-text .grid__cup-text-btn:hover::before, section.grid .grid__cup .grid__cup-text .grid__cup-text-btn:hover::before {
+  background: #fe7867;
 }
 
 section.grid .grid__egg img, section.grid .grid__cup img {
@@ -311,7 +326,7 @@ footer.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #458c7e;
+  background-color: #91D3C5;
 }
 
 footer.footer .footer__wrapper .footer__wrapper-content {
@@ -322,7 +337,7 @@ footer.footer .footer__wrapper .footer__wrapper-content {
 }
 
 footer.footer .footer__wrapper .footer__wrapper-content svg {
-  margin: 50px 0 20px 0;
+  margin: 90px 0 20px 0;
 }
 
 footer.footer .footer__wrapper .footer__wrapper-content ul {
@@ -337,8 +352,16 @@ footer.footer .footer__wrapper .footer__wrapper-content ul li a {
   text-decoration: none;
 }
 
+footer.footer .footer__wrapper .footer__wrapper-content ul li a:hover {
+  color: white;
+}
+
 footer.footer .footer__wrapper .footer__wrapper-content ul.socials {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+footer.footer .footer__wrapper .footer__wrapper-content ul.socials li a svg:hover path {
+  fill: white;
 }
 
 @media (max-width: 1024px) {

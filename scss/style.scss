@@ -76,6 +76,13 @@ section.hero {
                     padding: 12px 20px;
                     border-radius: 22px;
                 }
+
+                a.hero__contact-btn:hover {
+                    color: $white;
+                    background-color: rgba($white, 0.3);
+                    padding: 12px 20px;
+                    border-radius: 22px;
+                }
             }
         }
 
@@ -201,9 +208,17 @@ section.grid {
             .grid__egg-text-btn::before {
                 background: hsla(51, 100%, 49%, 0.3);
             }
+            
+            .grid__egg-text-btn:hover::before {
+                background: hsla(51, 100%, 49%, 1);
+            }
 
             .grid__cup-text-btn::before {
                 background: hsla(7, 99%, 70%, 0.3);
+            }
+
+            .grid__cup-text-btn:hover::before {
+                background: hsla(7, 99%, 70%, 1);
             }
         }
 
@@ -339,7 +354,7 @@ footer.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $dark-moderate-cyan-footer;
+    background-color: #91D3C5;
 
     .footer__wrapper {
 
@@ -350,7 +365,7 @@ footer.footer {
             flex-direction: column;
 
             svg {
-                margin: 50px 0 20px 0;
+                margin: 90px 0 20px 0;
             }
 
             ul {
@@ -365,11 +380,23 @@ footer.footer {
                         color: $dark-desaturated-cyan-graphic-design-text;
                         text-decoration: none;
                     }
+
+                    a:hover {
+                        color: $white;
+                    }
                 }
             }
 
             ul.socials {
-                margin-bottom: 20px;
+                margin-bottom: 30px;
+
+                li {
+                    a {
+                        svg:hover path {
+                            fill: $white;
+                        }
+                    }
+                }
             }
         }
     }
